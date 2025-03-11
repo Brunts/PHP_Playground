@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function phpfun_install() {
+  // Create a table to store the counter value.
+  $schema = [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'counter' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  // Create the table in the database.
+  \Drupal::database()->schema()->createTable('phpfun_counter', $schema);
+}

@@ -1,0 +1,7 @@
+phpfun.custom_page:
+  path: '/PHP'
+  defaults:
+    _controller: 'Drupal\phpfun\Controller\MyModuleController::customPage'
+    _title: 'Brandons PHP playground'
+  requirements:
+    _permission: 'access content'

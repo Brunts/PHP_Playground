@@ -1,0 +1,7 @@
+name: 'PHP playground page'
+type: module
+description: 'Drupal 10 module where I explore PHP functionality on a web page!'
+core_version_requirement: ^10 || ^11
+package: 'Custom'
+dependencies:
+  - drupal:views
